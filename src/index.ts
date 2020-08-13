@@ -9,7 +9,7 @@ app.use(koaLogger());
 app.use(router.routes());
 
 router.get("/", async ctx => {
-  ctx.body = "<h1>Hello, world!</h1>";
+  ctx.body = "<h1>Hello, world!</h1><pre>* TypeScript version</pre>";
 });
 
 app.listen(3000, () => {
