@@ -8,7 +8,7 @@ const app = express();
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
-  res.send(`<h1>Hello, world!</h1><pre>Time now: ${(new Date()).toString()}`);
+  res.send(`<h1>Hello, world!</h1><h3>Time now:</h3><pre>${(new Date()).toString()}</pre>`);
 });
 
 const server = app.listen(3000, () => {
